@@ -1,0 +1,145 @@
+﻿body {
+    font-family: 'Arimo', sans-serif;
+    background: linear-gradient(to left top, rgba(255,153,153, 0.4) 50%, ivory);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.nav {
+    border-radius: 5px 5px 0 0;
+    background-color: #ff9999;
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+    display: flex;
+    border-bottom: 5px ridge ivory;
+}
+
+.nav .nav-head {
+    font-size: 2em;
+    font-weight: 700;
+    color: ivory;
+    margin-left: 0.5em;
+    flex-grow: 9;
+}
+
+.nav-head img {
+    -webkit-filter: invert(.95) sepia(0.3);
+    filter: invert(.95) sepia(0.3);
+    width: 0.9em;
+    height: 0.9em;
+    vertical-align: middle;
+    padding-bottom: .15em;
+}
+
+.nav .nav-item {
+    text-align: center;
+    flex-grow: 1;
+    margin: auto 0;
+    color: ivory;
+}
+
+.memes {
+    z-index: -1;
+    margin-top: -25px;
+    padding: 2%;
+    background-color: ivory;
+    width: 96%;
+}
+
+.billboard {
+    width: 100%;
+    height: auto;
+}
+
+.billboard img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 25em;
+    border-bottom: 20px solid transparent;
+    border-image: linear-gradient(to bottom, black 99%, rgba(0,0,0,0));
+    border-image-slice: 1;
+}
+
+.billboard-text {
+    color: ivory;
+    margin: 0 auto;
+    height: 0;
+    position: relative;
+    top: 14.5em;
+    text-align: center;
+}
+
+.billboard-text span {
+    padding: 1%;
+    border-radius: 8px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.content {
+    text-align: center;
+    width: 100%;
+    -moz-column-count: 3;
+    -moz-column-gap: 3em;
+    -moz-column-width: 3em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 3em;
+    -webkit-column-width: 3em;
+    column-count: 3;
+}
+
+.content-img-lg {
+    width: 90%;
+}
+
+.content-img-md {
+    width: 40%;
+}
+
+.img-attr {
+    margin: 1em;
+    box-shadow: rgba(0,0,0,0.2) 2px 8px 8px;
+    border: 4px solid black;
+}
+
+.content-text {
+    margin: 1em;
+    width: 90%;
+    padding: 2%;
+    background-color: floralwhite;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.2) 2px 4px 4px;
+}
+
+footer {
+    padding: .1em;
+    text-align: center;
+    color: ivory;
+    border-top: 5px groove ivory;
+    border-radius: 0 0 5px 5px;
+    background-color: #ff9999;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .content {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        column-count: 1;
+    }
+}
